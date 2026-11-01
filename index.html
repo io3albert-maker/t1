@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> جغرافیا درس ۴ </title>
+<style>
+*{box-sizing:border-box;font-family:Vazirmatn,Tahoma,sans-serif}
+body{margin:0;background:#08080a;color:#f5f5f5}
+header{background:radial-gradient(circle at 50% 0%,#4a0000 0%,#0a0a0c 70%);border-bottom:4px solid #e50914;padding:44px 18px;text-align:center}
+header h1{margin:0;font-size:30px}
+header h1 span{color:#ff1744}
+.badge{display:inline-block;background:linear-gradient(135deg,#e50914,#7a0000);padding:7px 18px;border-radius:25px;font-size:13px;margin-bottom:12px}
+header p{color:#ffb3b3;margin:8px 0 0}
+nav{position:sticky;top:0;z-index:20;background:#0f0f12;display:flex;gap:8px;overflow:auto;padding:10px;border-bottom:2px solid #e50914}
+nav a{white-space:nowrap;text-decoration:none;color:#fff;background:#1a1a1f;border:1px solid #e50914;padding:8px 15px;border-radius:20px;font-size:14px}
+nav a:hover{background:#e50914}
+section{background:#131316;margin:16px;border:1px solid #26262b;border-top:4px solid #e50914;border-radius:18px;padding:22px;box-shadow:0 10px 35px rgba(229,9,20,.15)}
+h2{color:#ff5252;border-right:6px solid #e50914;padding-right:10px;margin-top:0}
+.card{background:#1c1c21;border:1px solid #333;border-radius:14px;padding:14px;margin:10px 0;line-height:2.1}
+.card b{color:#ff8a80}
+.grid{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:850px){.grid{grid-template-columns:1fr 1fr}}
+iframe.map{width:100%;height:360px;border:0;border-radius:14px;background:#000}
+#globeWrap{text-align:center;background:radial-gradient(circle,#200000,#000 75%);border-radius:16px;padding:12px;border:1px solid #e50914}
+#globe{max-width:100%;touch-action:none;cursor:grab}
+.quiz-q{background:#1b1b20;border:1.5px solid #333;border-radius:12px;padding:12px;margin:10px 0;line-height:2}
+.quiz-q.ok{border-color:#00e676;background:#0e2016}
+.quiz-q.bad{border-color:#ff1744;background:#260d12}
+.oktxt{color:#00e676;font-weight:bold}
+.badtxt{color:#ff8a80}
+.trueans{color:#ffeb3c;font-weight:bold;background:#000;padding:2px 8px;border-radius:8px;display:inline-block;margin-top:4px}
+.feedback{margin-top:8px;font-size:14px}
+button.main{background:linear-gradient(135deg,#e50914,#7a0000);color:#fff;border:0;padding:12px 26px;border-radius:12px;font-size:16px;cursor:pointer;margin:5px}
+button.ghost{background:#000;border:1px solid #e50914;color:#fff;padding:12px 20px;border-radius:12px;cursor:pointer}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+video{width:100%;border-radius:14px;background:#000;border:1px solid #e50914}
+footer{text-align:center;padding:22px;color:#888;font-size:13px}
+/* ماشین‌حساب هوشمند */
+.smart-calc{max-width:400px;margin:10px auto;background:linear-gradient(180deg,#141414,#000);border:1px solid #e50914;border-radius:22px;padding:16px;box-shadow:0 0 35px rgba(229,9,20,.35)}
+.calc-screen{background:#0f0f12;border:1px solid #333;border-radius:14px;padding:12px;text-align:left;direction:ltr;min-height:78px}
+#calcExpr{color:#ff8a80;font-size:15px;min-height:22px;word-break:break-all;direction:ltr}
+#calcRes{color:#fff;font-size:30px;font-weight:bold;direction:ltr}
+.calc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+.calc-grid button{padding:14px 6px;border-radius:13px;border:1px solid #333;background:#1d1d22;color:#fff;font-size:18px;cursor:pointer}
+.calc-grid button.op{background:#2b0608;border-color:#e50914;color:#ffb3b3}
+.calc-grid button.eq{background:linear-gradient(135deg,#e50914,#7a0000);grid-column:span 2;font-weight:bold}
+.calc-grid button:hover{filter:brightness(1.35)}
+#hist{font-size:13px;color:#bbb;margin-top:10px;max-height:110px;overflow:auto;line-height:2;border-top:1px dashed #444;padding-top:8px}
+.tag{font-size:12px;color:#ff8a80}
+</style>
+</head>
+<body>
+<header>
+<div class="badge">دهم تجربی ۱ | دبیر: رضا نجفی | ارائه‌دهنده: امیرمحمد چیره</div>
+<h1>ناهمواری‌های <span>ایران</span> | درس ۴ جغرافیا</h1>
+</header>
+<nav>
+<a href="#lesson">مطالب درس</a>
+<a href="#map">نقشه</a>
+<a href="#globeSec">کره زمین</a>
+<a href="#quiz">۲۰ تست</a>
+<a href="#dl">دانلود</a>
+<a href="#videoSec">ویدیو</a>
+<a href="#calcSec">ماشین‌حساب</a>
+</nav>
+<section id="lesson">
+<h2>مطالب درس خط‌به‌خط طبق کتاب</h2>
+<div class="grid">
+<div class="card"><b>۱. ناهمواری چیست؟</b><br>به پستی و بلندی‌های سطح زمین ناهمواری می‌گویند. ایران کشوری کوهستانی و مرتفع است.<br><span class="tag">سوال متن: ناهمواری چیست؟ مثال بزنید.</span></div>
+<div class="card"><b>۲. پیدایش ناهمواری‌های ایران</b><br>ایران روی کمربند آلپ ـ هیمالیاست. برخورد صفحه عربستان به ایران باعث چین‌خوردگی و بالا آمدن البرز و زاگرس شد.<br><span class="tag">سوال متن: پیدایش ناهمواری‌های ایران با کدام حرکت مرتبط است؟</span></div>
+<div class="card"><b>۳. عوامل درونی</b><br>چین‌خوردگی، گسل، حرکات زمین‌ساختی و آتشفشان. دماوند، سبلان، سهند و تفتان آتشفشانی‌اند.<br><span class="tag">سوال متن: دو عامل درونی با مثال نام ببرید.</span></div>
+<div class="card"><b>۴. عوامل بیرونی</b><br>فرسایش آبی، بادی و یخچالی. کلوت‌های لوت ساخته باد و دره‌های زاگرس ساخته آب است.<br><span class="tag">سوال متن: فرق عوامل درونی و بیرونی چیست؟</span></div>
+<div class="card"><b>۵. البرز</b><br>از آذربایجان تا خراسان، جهت غربی ـ شرقی، دماوند ۵۶۱۰ متر. مانع ابرهای خزر است.<br><span class="tag">سوال متن: جهت البرز و اثر آن بر بارش چیست؟</span></div>
+<div class="card"><b>۶. زاگرس</b><br>از شمال‌غربی تا جنوب‌شرقی، رشته‌های موازی و جوان، دنا ۴۴۰۹ متر. سرچشمه کارون است.<br><span class="tag">سوال متن: فرق البرز و زاگرس را بنویسید.</span></div>
+<div class="card"><b>۷. کوه‌های دیگر</b><br>سبلان و سهند در شمال‌غرب، شیرکوه در یزد، تفتان در جنوب‌شرق.<br><span class="tag">سوال متن: دو کوه آتشفشانی نام ببرید.</span></div>
+<div class="card"><b>۸. دشت‌ها</b><br>دشت کویر نمکزار مرکزی، دشت لوت گرم‌ترین نقطه با کلوت‌ها، دشت پایکوهی مناسب کشاورزی.<br><span class="tag">سوال متن: فرق دشت کویر با پایکوهی چیست؟</span></div>
+<div class="card"><b>۹. جلگه‌ها</b><br>جلگه خزر باریک و مرطوب با برنج، جلگه خوزستان پهن و گرم با نیشکر و نفت.<br><span class="tag">سوال متن: دو جلگه را مقایسه کنید.</span></div>
+<div class="card"><b>۱۰. اهمیت ناهمواری‌ها</b><br>تأمین آب، خاک کشاورزی، مسیر راه‌ها، استقرار شهرها، معدن، گردشگری و دفاع.<br><span class="tag">سوال متن: سه اهمیت ناهمواری‌ها را بنویسید.</span></div>
+</div>
+</section>
+<section id="map">
+<h2>نقشه زنده ایران</h2>
+<iframe class="map" src="https://www.openstreetmap.org/export/embed.html?bbox=44.0%2C25.0%2C63.5%2C39.5&layer=mapnik&marker=32.5%2C54.0"></iframe>
+</section>
+<section id="globeSec">
+<h2>کره زمین با نام کشورها — با لمس بچرخان</h2>
+<div id="globeWrap">
+<canvas id="globe" width="360" height="360"></canvas>
+<p style="font-size:13px;color:#ffb3b3">بکش تا بچرخد. ایران قرمز و بزرگ مشخص است و نام ۱۹ کشور روی کره نوشته شده.</p>
+</div>
+</section>
+<section id="quiz">
+<h2>۲۰ تست با نمایش غلط‌ها و پاسخ صحیح</h2>
+<div id="quizBox"></div>
+<button class="main" onclick="checkQuiz()">تصحیح و نمایش پاسخ‌ها</button>
+<button class="ghost" onclick="resetQuiz()">تلاش دوباره</button>
+<p id="quizRes" style="font-weight:bold;color:#ffeb3c;font-size:18px"></p>
+</section>
+<section id="dl">
+<h2>دانلود فایل‌ها</h2>
+<div class="btns">
+<button class="main"><a class="ghost" href="../Geo4blue.pptx">پاور پوینت 1</a></button>
+<button class="ghost"><a class="ghost" href="../chirehsina/Geography_Lesson4_FINAL.pptx">پاور پوینت 2</a></button>
+<button class="main"><a class="ghost" href="../chirehsina/Geography_Lesson4_Silent_Visual.mov">ویدیو</a></button>
+</div>
+</section>
+<section id="videoSec">
+<h2>محل قرارگیری ویدیو</h2>
+<video controls><source src="../chirehsina/Geography_Lesson4_Silent_Visual.mov" type="video/mp4"></video>
+</section>
+<section id="calcSec">
+<h2>ماشین‌حساب </h2>
+<div class="smart-calc">
+<div class="calc-screen"><div id="calcExpr">۰</div><div id="calcRes">۰</div></div>
+<div class="calc-grid">
+<button class="op" onclick="clearC()">C</button>
+<button class="op" onclick="back()">⌫</button>
+<button class="op" onclick="press('%')">٪</button>
+<button class="op" onclick="press('/')">÷</button>
+<button onclick="press('7')">۷</button><button onclick="press('8')">۸</button><button onclick="press('9')">۹</button><button class="op" onclick="press('*')">×</button>
+<button onclick="press('4')">۴</button><button onclick="press('5')">۵</button><button onclick="press('6')">۶</button><button class="op" onclick="press('-')">−</button>
+<button onclick="press('1')">۱</button><button onclick="press('2')">۲</button><button onclick="press('3')">۳</button><button class="op" onclick="press('+')">+</button>
+<button onclick="press('0')">۰</button><button onclick="press('.')">.</button><button class="op" onclick="press('Math.sqrt(')">√</button><button class="op" onclick="press('**')">^</button>
+<button class="op" onclick="press('(')">(</button><button class="op" onclick="press(')')">)</button><button class="eq" onclick="equal()">= مساوی</button>
+</div>
+<div id="hist"></div>
+<p style="font-size:12px;color:#888">هوشمند: اولویت ضرب و تقسیم، پرانتز، توان ^ ، جذر √ ، درصد ٪ و اعداد فارسی را می‌فهمد.</p>
+</div>
+</section>
+<footer>امیرمحمد چیره | دهم تجربی ۱ | دبیر رضا نجفی</footer>
+<script>
+var c=document.getElementById('globe'),x=c.getContext('2d');
+var ang=40,auto=true,drag=false,lastX=0;
+var countries=[{name:'ایران',lat:32,lon:54,imp:true},{name:'ترکیه',lat:39,lon:35},{name:'عراق',lat:33,lon:44},{name:'افغانستان',lat:34,lon:66},{name:'پاکستان',lat:30,lon:70},{name:'عربستان',lat:24,lon:45},{name:'مصر',lat:27,lon:30},{name:'روسیه',lat:60,lon:90},{name:'چین',lat:35,lon:105},{name:'هند',lat:21,lon:78},{name:'ژاپن',lat:36,lon:138},{name:'آلمان',lat:51,lon:10},{name:'فرانسه',lat:47,lon:2},{name:'ایتالیا',lat:42,lon:12},{name:'آمریکا',lat:38,lon:-97},{name:'کانادا',lat:56,lon:-106},{name:'برزیل',lat:-10,lon:-55},{name:'استرالیا',lat:-25,lon:133},{name:'اسپانیا',lat:40,lon:-4}];
+function proj(lat,lon){var la=lat*Math.PI/180,lo=(lon+ang)*Math.PI/180,R=135;return{x:180+R*Math.cos(la)*Math.sin(lo),y:180-R*Math.sin(la),vis:Math.cos(la)*Math.cos(lo)>0};}
+function draw(){x.clearRect(0,0,360,360);x.beginPath();x.arc(180,180,135,0,Math.PI*2);x.fillStyle='#000';x.fill();x.lineWidth=4;x.strokeStyle='#e50914';x.stroke();x.strokeStyle='rgba(255,60,60,.35)';x.lineWidth=1;for(var i=-60;i<=60;i+=20){x.beginPath();x.ellipse(180,180,Math.abs(135*Math.cos(i*Math.PI/180)),135,0,0,Math.PI*2);x.stroke();}for(var k=0;k<12;k++){var rx=Math.abs(135*Math.cos((k*30+ang)*Math.PI/180));x.beginPath();x.ellipse(180,180,rx,135,0,0,Math.PI*2);x.stroke();}countries.forEach(function(p){var q=proj(p.lat,p.lon);if(!q.vis)return;x.beginPath();x.arc(q.x,q.y,p.imp?8:4,0,Math.PI*2);x.fillStyle=p.imp?'#ff1744':'#fff';x.fill();x.fillStyle=p.imp?'#ffeb3c':'#ffd6d6';x.font=p.imp?'bold 15px Tahoma':'12px Tahoma';x.fillText(p.name,q.x+8,q.y-6);});if(auto)ang=(ang+0.5)%360;requestAnimationFrame(draw);}draw();
+function s(px){drag=true;auto=false;lastX=px}function m(px){if(!drag)return;ang=(ang+(px-lastX)*0.6+360)%360;lastX=px}
+c.addEventListener('mousedown',function(e){s(e.clientX)});window.addEventListener('mousemove',function(e){m(e.clientX)});window.addEventListener('mouseup',function(){drag=false;auto=true});
+c.addEventListener('touchstart',function(e){s(e.touches[0].clientX)},{passive:true});c.addEventListener('touchmove',function(e){m(e.touches[0].clientX);e.preventDefault()},{passive:false});c.addEventListener('touchend',function(){drag=false;auto=true});
+var Q=[["بلندترین قله ایران کدام است؟",["سبلان","دماوند","دنا","تفتان"],1],["جهت البرز چیست؟",["شمالی جنوبی","غربی شرقی","شمال‌غربی جنوب‌شرقی","مداری"],1],["جهت زاگرس چیست؟",["غربی شرقی","شمالی جنوبی","شمال‌غربی جنوب‌شرقی","شرقی غربی"],2],["کدام عامل درونی است؟",["باد","آب جاری","چین‌خوردگی","یخچال"],2],["کدام عامل بیرونی است؟",["گسل","فرسایش بادی","زمین‌ساخت","آتشفشان"],1],["دشت کویر و لوت کجایند؟",["شمال","چاله داخلی","جلگه ساحلی","غرب"],1],["جلگه خزر کنار کدام پهنه آبی است؟",["خلیج فارس","دریای خزر","دریای عمان","ارومیه"],1],["جلگه خوزستان کجاست؟",["شمال‌شرق","جنوب‌غرب","شمال‌غرب","مرکز"],1],["دنا مربوط به کدام رشته‌کوه است؟",["البرز","مرکزی","زاگرس","شرقی"],2],["تفتان کجاست؟",["شمال","جنوب‌شرق","غرب","شمال‌غرب"],1],["کدام دشت خاک کشاورزی دارد؟",["پایکوهی","لوت","کویر نمک","چاله"],0],["جنس جلگه چیست؟",["مرتفع","هموار و کم‌ارتفاع","آتشفشانی","یخچالی"],1],["کدام اهمیت ناهمواری‌هاست؟",["تأمین آب","گردشگری","کشاورزی","هر سه مورد"],3],["شیرکوه کجاست؟",["یزد","گیلان","آذربایجان","خوزستان"],0],["سبلان کجاست؟",["شمال‌غرب","جنوب","مرکز","شرق"],0],["فرسایش یخچالی بیشتر کجاست؟",["کویر","قله‌های مرتفع","جلگه","دشت"],1],["تعریف ناهمواری؟",["فقط کوه","پستی و بلندی سطح زمین","فقط دشت","فقط جلگه"],1],["کدام کوه آتشفشانی است؟",["دنا","دماوند","شیرکوه","زاگرس"],1],["راه‌های ایران بیشتر تحت‌تأثیر چیست؟",["جلگه","کوهستان","کویر","جنگل"],1],["پیدایش البرز و زاگرس با چیست؟",["باد","برخورد صفحه عربستان","یخچال","آب"],3]];
+var box=document.getElementById('quizBox'),html='';
+Q.forEach(function(q,i){html+='<div class="quiz-q" id="qd'+i+'"><b>'+(i+1)+'. '+q[0]+'</b><br>';q[1].forEach(function(o,j){html+='<label><input type="radio" name="q'+i+'" value="'+j+'"> '+o+'</label><br>'});html+='<div class="feedback" id="fb'+i+'"></div></div>'});box.innerHTML=html;
+function checkQuiz(){var s=0;Q.forEach(function(q,i){var v=document.querySelector('input[name=q'+i+']:checked');var fb=document.getElementById('fb'+i);var card=document.getElementById('qd'+i);card.classList.remove('ok','bad');var correct=q[1][q[2]];if(v&&parseInt(v.value)===q[2]){s++;card.classList.add('ok');fb.innerHTML='<span class="oktxt">✔ آفرین! پاسخ درست است.</span>';}else{card.classList.add('bad');var yours=v?q[1][parseInt(v.value)]:'بی‌پاسخ';fb.innerHTML='<span class="badtxt">✘ پاسخ تو: '+yours+'</span><br><span class="trueans">✔ پاسخ صحیح: '+correct+'</span>';}});var t='نمره تو: '+s+' از ۲۰ '+(s>=17?'— عالی! 🌟':s>=12?'— خوب!':'— بیشتر مرور کن.');document.getElementById('quizRes').textContent=t;document.getElementById('quizRes').scrollIntoView({behavior:'smooth'});}
+function resetQuiz(){Q.forEach(function(q,i){var r=document.querySelectorAll('input[name=q'+i+']');r.forEach(function(e){e.checked=false});document.getElementById('qd'+i).classList.remove('ok','bad');document.getElementById('fb'+i).innerHTML='';});document.getElementById('quizRes').textContent='';window.scrollTo({top:document.getElementById('quizBox').offsetTop-80,behavior:'smooth'});}
+var expr='';
+function faToEn(s){return s.replace(/[۰-۹]/g,function(d){return '۰۱۲۳۴۵۶۷۸۹'.indexOf(d)}).replace(/٪/g,'').replace(/×/g,'*').replace(/÷/g,'/').replace(/−/g,'-');}
+function upd(){document.getElementById('calcExpr').textContent=expr||'۰';}
+function press(v){if(v==='%'){expr+='/100';}else{var map={'7':'۷','8':'۸','9':'۹','4':'۴','5':'۵','6':'۶','1':'۱','2':'۲','3':'۳','0':'۰'};expr+=(map[v]||v);}upd();}
+function clearC(){expr='';document.getElementById('calcRes').textContent='۰';upd();}
+function back(){expr=expr.slice(0,-1);upd();}
+function equal(){try{var e=faToEn(expr).replace(/\^/g,'**');if(!e)return;var r=Function('"use strict";return('+e+')')();if(typeof r==='number'&&isFinite(r)){r=Math.round(r*1000000)/1000000;document.getElementById('calcRes').textContent=Number(r).toLocaleString('fa-IR');var li=document.createElement('div');li.textContent=expr+' = '+r;document.getElementById('hist').prepend(li);}else{document.getElementById('calcRes').textContent='خطا';}}catch(err){document.getElementById('calcRes').textContent='عبارت نامعتبر';}}
+upd();
+</script>
+</body>
+</html>
